@@ -8,32 +8,26 @@ Inspired by https://github.com/stevespringett/nist-data-mirror
 
 ## Usage
 
-1. Run the node app to fetch data from NIST
+#### 1. Run the node app to fetch data from NIST
 ```
 npm install
 npm start
 ```
 
-2. Host the data using Docker Nginx
+#### 2. Host the data using Docker Nginx
 ```
 docker build -t local/nist-mirror:latest .
 docker run -ti -p 8080:80 local/nist-mirror:latest
 ```
 
-3. Check it from your browser
+#### 3. Check it from your browser
 ```
 http://localhost:8080/nvdcve-1.0-2018.json
 ```
 
-## Update the mirror
-Running the script again will refresh the mirror data. This should be run periodically to be kept up to date.
-
-## Use the mirror
-
-### Maven dependency check plugin
-
+#### 4. Use the mirror
 The Dependency check has support for a number of build tools, see https://jeremylong.github.io/DependencyCheck/
-
+##### Maven dependency check plugin
 If you use Maven, here are the Maven plugin configs to make use of the mirror (replace with your hostname)
 
 ```
@@ -62,3 +56,6 @@ It should run on `mvn verify` phase by default. You may also trigger it using:
 ```
 mvn org.owasp:dependency-check-maven:3.1.1:check
 ```
+
+## Update the mirror
+Running the script again will refresh the mirror data. This should be run periodically to be kept up to date.
