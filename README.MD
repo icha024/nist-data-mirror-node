@@ -28,13 +28,13 @@ http://localhost:8080/nvdcve-1.0-2018.json
 ## Update the mirror
 Running the script again will refresh the mirror data. You may also wish to limit data years range of data to get by editing the `index.js` script.
 
-## Optional - Use the mirror
+## Use the mirror
 
 ### Maven dependency check plugin
 
-You can use whatever build tool you choose, see https://jeremylong.github.io/DependencyCheck/
+The Dependency check has support for a number of build tools, see https://jeremylong.github.io/DependencyCheck/
 
-Here are the Maven plugin configs to make use of the mirror (replace with your hostname)
+If you use Maven, here are the Maven plugin configs to make use of the mirror (replace with your hostname)
 
 ```
 <plugin>
