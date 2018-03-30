@@ -17,7 +17,7 @@ npm start
 #### 2. Host the data using Docker Nginx
 ```
 docker build -t local/nist-mirror:latest .
-docker run -ti -p 8080:80 local/nist-mirror:latest
+docker run -ti --rm -p 8080:80 local/nist-mirror:latest
 ```
 
 #### 3. Check it from your browser
