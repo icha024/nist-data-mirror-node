@@ -26,7 +26,7 @@ http://localhost:8080/nvdcve-1.0-2018.json
 ```
 
 ## Update the mirror
-Running the script again will refresh the mirror data. You may also wish to limit data years range of data to get by editing the `index.js` script.
+Running the script again will refresh the mirror data. This should be run periodically to be kept up to date.
 
 ## Use the mirror
 
