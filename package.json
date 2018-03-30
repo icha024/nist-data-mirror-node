@@ -1,0 +1,21 @@
+{
+  "name": "nist-data-mirror-node",
+  "version": "1.0.0",
+  "description": "Pull NIST vulnerbility database data to build mirror.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ian Chan",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-config-airbnb-bundle": "^1.2.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.1.2"
+  }
+}
