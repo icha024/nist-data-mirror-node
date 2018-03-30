@@ -1,5 +1,3 @@
-[![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)][Apache 2.0]
-
 # NIST Data Mirror
 
 Builds a mirror of the NIST vulnerbility database.
