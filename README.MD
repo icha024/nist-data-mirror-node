@@ -1,6 +1,10 @@
+[![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)][Apache 2.0]
+
 # NIST Data Mirror
 
 Builds a mirror of the NIST vulnerbility database.
+
+Use the mirrored data for faster scans with [OWASP Dependency-Check](https://www.owasp.org/index.php/OWASP_Dependency_Check)  to check for known dependency vulnerabilities.
 
 Inspired by https://github.com/stevespringett/nist-data-mirror
 
