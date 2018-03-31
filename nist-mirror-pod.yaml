@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nist-mirror
+spec:
+  selector:
+    matchLabels:
+      app: nist-mirror
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nist-mirror
+    spec:
+      containers:
+      - name: nist-mirror
+        image: nist-mirror:latest
+        resources:
+          requests:
+            cpu: 500m
+            memory: 100Mi
+          # limits:
+          #   cpu: 2000m
+          #   memory: 256Mi
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Never
